@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Jelly Fish</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mixed-slider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+</head>
+
+<body>
+    <div class="container-fluid container-fluid-pad">
+        <div class="row">
+            <div class="col-lg-6">
+                <div style="position: relative;" class="m-auth-view">
+                    <img src="assests/WebSVGAssets/LoginSignUpBg.svg" class="img-fluid fix-img full-screen">
+                    <div class="topright">
+                        <h4 class="font-bold">JELLYFISH</h4>
+                        <p class="font-regular">Platform to share your opinion</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" style="margin:auto 0">
+                <div class="container form-pad m-auth-view-card full-screen">
+                    <div class="hiden-text">
+                        <h3 class="font-bold">Welcome to JELLYFISH</h3>
+                        <p class="font-regular">Platform to share your opinion</p>
+                    </div>
+                    <div class="text-center">
+                        <ul class="nav nav-tabs md-7" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <form>
+                                <div class="form-group md-5 md-15">
+                                    <input type="email" class="form-control form-input-pad" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control form-input-pad" id="exampleInputPassword1" placeholder="Password">
+                                    <a href="forgetPassword.html" class="float-right">Forget Password?</a>
+                                </div>
+                                <a href="JellyFishHome.html">
+                                    <button type="button" class="btn btn-auth md-1 btn-login-signup">Login</button>
+                                </a>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <form>
+                                <div class="form-group md-5 md-15">
+                                    <input type="email" class="form-control form-input-pad" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Email Address">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control form-input-pad" id="exampleInputPassword2" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-auth md-1 btn-login-signup">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="javascript/jquery-3.3.1.min.js"></script>
+    <script src="javascript/popper.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/multislider.js"></script>
+</body>
+
+</html>

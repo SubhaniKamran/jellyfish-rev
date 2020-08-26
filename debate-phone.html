@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jelly Fish</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="John Doe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/mixed-slider.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <style>
+      #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+      }
+
+      .center {
+        width: 65%;
+        margin: -10px auto;
+      }
+
+      .float-back-btn {
+        margin-top: 10px;
+        position: fixed;
+        z-index: 4;
+        color: white;
+        font-weight: 900;
+        font-size: larger;
+      }
+
+      .float-playButton-btn {
+        position: fixed;
+        z-index: 4;
+      }
+
+      .float-profile-card {
+        margin-left: 30%;
+        position: fixed;
+        z-index: 4;
+      }
+
+      .swipeUpNumberStyle {
+        position: absolute;
+        margin-left: 33%;
+        margin-right: auto;
+        margin-top: 20%;
+        display: none;
+      }
+      .swipeDownNumberStyle {
+        position: absolute;
+        margin-left: 33%;
+        margin-right: auto;
+        margin-top: 100%;
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body class="body-debate-phone">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="col">
+          <div class="row mt-2">
+            <div class="col-sm-3">
+              <a href="./debate.html" class="float-back-btn m-view">
+                <i
+                  class="fa fa-chevron-left text-white fa-lg"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </div>
+            <div class="col-sm-9 text-center">
+              <a href="./audienceTabs.html" class="float-profile-card m-view">
+                <img src="./assests/MobileSVGAssets/userProfileTop.svg" />
+              </a>
+            </div>
+          </div>
+
+          <div class="card text-center card-profile hiden-text md-6">
+            <a href="audienceTabs.html">
+              <img
+                class="card-img-top img-circle rounded-circle"
+                src="assests/WebSVGAssets/userweb4.svg"
+                alt="Card image cap"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title md-1">@TeeJ</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Jelly Fish Score</h6>
+
+              <div class="container container-circle">
+                <div class="circle">
+                  <p class="circle-content text-color-JellyFish" style="font-size: 25px; font-weight: 900;">
+                    363
+                </p>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <text class="card-link card-text-style"
+                  >3048 <br />
+                  Followers</text
+                >
+                <text class="card-link card-text-style"
+                  >3048 <br />
+                  Following</text
+                >
+                <text class="card-link card-text-style"
+                  >123 <br />
+                  Stings</text
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card text-center md-1 hiden-text"
+            style="border-radius: 10px"
+          >
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-4">
+                  <a
+                    href="hashTag.html"
+                    class="btn btn-temp text-white"
+                    style="padding: 5%"
+                  >
+                    <img src="assests/WebSVGAssets/SearchTagIcon.svg" />
+                    HashTags
+                  </a>
+                </div>
+                <div class="col-sm-4">
+                  <a
+                    href="JellyFishHome.html"
+                    class="btn btn-temp text-white"
+                    style="padding: 5%"
+                  >
+                    <img src="assests/WebSVGAssets/SearchTagIcon.svg" />
+                    Audience
+                  </a>
+                </div>
+                <div class="col-sm-4">
+                  <a
+                    href="stream.html"
+                    class="btn btn-temp text-white"
+                    style="padding: 5%"
+                  >
+                    <img src="assests/WebSVGAssets/SearchTagIcon.svg" /> Stream
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="col">
+          <div class="card text-center md-6 hiden-text">
+            <div class="card-body">
+              <h5 class="card-title font-bold text-color-JellyFish">DEBATE</h5>
+            </div>
+          </div>
+
+          <div class="card text-center md-1 hiden-text">
+            <div class="card-body">
+              <h5 class="card-title text-color-JellyFish">
+                Ecommerce VS Retail
+              </h5>
+              <h6 class="card-subtitle mb-2 text-color-JellyFish">20:09:35</h6>
+
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="float-left">
+                    <img
+                      class="img-circle rounded-circle img-fluid debate-card-image"
+                      src="assests/WebSVGAssets/userweb2.svg"
+                      alt="Card image cap"
+                    />
+                    <text class="text-color-JellyFish">@Mechanzee (1096)</text>
+                  </div>
+                  <div class="float-right">
+                    <text class="text-color-JellyFish">@Jake (1301)</text>
+                    <img
+                      class="img-circle rounded-circle img-fluid debate-card-image"
+                      src="assests/WebSVGAssets/userweb3.svg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="align-bottom font-bold text-color-JellyFish">
+                <p>#WilSonMKTG321</p>
+              </div>
+
+              <img
+                class="card-img-bottom-right img-circle rounded-circle"
+                src="assests/WebSVGAssets/PlayAllButton.svg"
+              />
+            </div>
+          </div>
+
+          <!--// Need to call from another html file-->
+
+          <div class="md-7 parent text-center hiden-text">
+            <video
+              src="./video.mp4"
+              style="width: 65%; height: auto"
+              controls
+            ></video>
+
+            <!--
+                        <img src="assests/WebSVGAssets/mediaPlayerStyle1.svg" class="img-fluid hiden-text">
+                        <img src="assests/WebSVGAssets/Pause-1.svg" class="over-img-debate img-fluid play-pause play" data-toggle="modal" data-target="#exampleModalCenter">-->
+          </div>
+          <!------ Include the above in your HEAD tag ---------->
+
+          <div class="center hiden-text">
+            <p></p>
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button
+                  onclick="myFunction()"
+                  type="button"
+                  class="btn btn-danger btn-number"
+                  data-type="minus"
+                  data-field="quant[2]"
+                >
+                  <
+                  <span class="glyphicon glyphicon-minus"></span>
+                </button>
+              </span>
+
+              <input
+                style="text-align: center"
+                type="text"
+                size="4"
+                name="quant[2]"
+                class="form-control input-number"
+                value="10"
+                min="1"
+                max="100000"
+              />
+              <span class="input-group-btn">
+                <button
+                  onclick="myFunction1()"
+                  type="button"
+                  class="btn btn-success btn-number"
+                  data-type="plus"
+                  data-field="quant[2]"
+                >
+                  > <span class="glyphicon glyphicon-plus"></span>
+                </button>
+              </span>
+            </div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <video class="m-view" id="myVideo">
+      <source src="./trumpv.m4v" type="video/mp4" />
+    </video>
+
+    <img
+      class="m-view swipeUpNumberStyle"
+      src="assests/MobileSVGAssets/750.svg"
+      id="swipeUp"
+    />
+    <img
+      class="m-view swipeDownNumberStyle"
+      src="assests/MobileSVGAssets/-103.svg"
+      id="swipeDown"
+    />
+
+    <img
+      src="assests/WebSVGAssets/Pause-1.svg"
+      style="cursor: pointer"
+      class="m-view over-img-debate"
+      onclick="playPause(this,'myVideo')"
+    />
+
+    <script>
+      function playPause(img, video) {
+        var video = document.getElementById(video);
+        if (video.paused) {
+          video.play();
+          img.src = "./assests/MobileSVGAssets/Pause.svg";
+        } else {
+          video.pause();
+          img.src = "./assests/MobileSVGAssets/Pause-1.svg";
+        }
+      }
+
+      function myFunction() {
+        var txt;
+        if (confirm("You Give Negative Points!")) {
+          txt = "You Give Negative Points!";
+        } else {
+          txt = "You pressed Cancel!";
+        }
+        document.getElementById("demo").innerHTML = txt;
+      }
+    </script>
+    <script>
+      function myFunction1() {
+        var txt;
+        if (confirm("You Give Positive Points!")) {
+          txt = "You Give Positive Points!";
+        } else {
+          txt = "You pressed Cancel!";
+        }
+        document.getElementById("demo").innerHTML = txt;
+      }
+    </script>
+    <script src="javascript/jquery-3.3.1.min.js"></script>
+    <script src="javascript/popper.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/multislider.js"></script>
+    <script>
+      $(document).ready(() => {
+        $(".play-pause").click(function () {
+          if (!$(this).hasClass("play")) {
+            $(this).attr("src", "assests/WebSVGAssets/Pause-1.svg");
+            $(this).addClass("play");
+            $(".cycle-slideshow").cycle("pause");
+          } else {
+            $(this).attr("src", "assests/WebSVGAssets/Pause.svg");
+            $(this).removeClass("play");
+            $(".cycle-slideshow").cycle("resume");
+          }
+        });
+      });
+    </script>
+    <script>
+      //plugin bootstrap minus and plus
+      //http://jsfiddle.net/laelitenetwork/puJ6G/
+      $(".btn-number").click(function (e) {
+        e.preventDefault();
+
+        fieldName = $(this).attr("data-field");
+        type = $(this).attr("data-type");
+        var input = $("input[name='" + fieldName + "']");
+        var currentVal = parseInt(input.val());
+        if (!isNaN(currentVal)) {
+          if (type == "minus") {
+            if (currentVal > input.attr("min")) {
+              input.val(currentVal - 1).change();
+            }
+            if (parseInt(input.val()) == input.attr("min")) {
+              $(this).attr("disabled", true);
+            }
+          } else if (type == "plus") {
+            if (currentVal < input.attr("max")) {
+              input.val(currentVal + 1).change();
+            }
+            if (parseInt(input.val()) == input.attr("max")) {
+              $(this).attr("disabled", true);
+            }
+          }
+        } else {
+          input.val(0);
+        }
+      });
+      $(".input-number").focusin(function () {
+        $(this).data("oldValue", $(this).val());
+      });
+      $(".input-number").change(function () {
+        minValue = parseInt($(this).attr("min"));
+        maxValue = parseInt($(this).attr("max"));
+        valueCurrent = parseInt($(this).val());
+
+        name = $(this).attr("name");
+        if (valueCurrent >= minValue) {
+          $(
+            ".btn-number[data-type='minus'][data-field='" + name + "']"
+          ).removeAttr("disabled");
+        } else {
+          alert("Sorry, the minimum value was reached");
+          $(this).val($(this).data("oldValue"));
+        }
+        if (valueCurrent <= maxValue) {
+          $(
+            ".btn-number[data-type='plus'][data-field='" + name + "']"
+          ).removeAttr("disabled");
+        } else {
+          alert("Sorry, the maximum value was reached");
+          $(this).val($(this).data("oldValue"));
+        }
+      });
+      $(".input-number").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if (
+          $.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+          // Allow: Ctrl+A
+          (e.keyCode == 65 && e.ctrlKey === true) ||
+          // Allow: home, end, left, right
+          (e.keyCode >= 35 && e.keyCode <= 39)
+        ) {
+          // let it happen, don't do anything
+          return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if (
+          (e.shiftKey || e.keyCode < 48 || e.keyCode > 57) &&
+          (e.keyCode < 96 || e.keyCode > 105)
+        ) {
+          e.preventDefault();
+        }
+      });
+    </script>
+
+    <script>
+      var container = document.querySelector("#myVideo");
+
+      container.addEventListener("touchstart", startTouch, false);
+      container.addEventListener("touchmove", moveTouch, false);
+
+      // Swipe Up / Down / Left / Right
+      var initialX = null;
+      var initialY = null;
+
+      function startTouch(e) {
+        initialX = e.touches[0].clientX;
+        initialY = e.touches[0].clientY;
+      }
+
+      function moveTouch(e) {
+        if (initialX === null) {
+          return;
+        }
+
+        if (initialY === null) {
+          return;
+        }
+
+        var currentX = e.touches[0].clientX;
+        var currentY = e.touches[0].clientY;
+
+        var diffX = initialX - currentX;
+        var diffY = initialY - currentY;
+
+        if (Math.abs(diffX) > Math.abs(diffY)) {
+          // sliding horizontally
+          if (diffX > 0) {
+            // swiped left
+            console.log("swiped left");
+          } else {
+            // swiped right
+            console.log("swiped right");
+          }
+        } else {
+          // sliding vertically
+          if (diffY > 0) {
+            // swiped up
+            document.getElementById("swipeUp").style.display = "block";
+            setTimeout(function () {
+              document.getElementById("swipeUp").style.display = "none";
+            }, 1000);
+
+            console.log("swiped up");
+          } else {
+            // swiped down
+
+            document.getElementById("swipeDown").style.display = "block";
+            setTimeout(function () {
+              document.getElementById("swipeDown").style.display = "none";
+            }, 1000);
+            console.log("swiped down");
+          }
+        }
+
+        initialX = null;
+        initialY = null;
+
+        e.preventDefault();
+      }
+    </script>
+  </body>
+</html>

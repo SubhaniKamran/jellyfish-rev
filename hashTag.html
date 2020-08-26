@@ -1,0 +1,594 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Jelly Fish</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mixed-slider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <style>
+        .float-back-btn {
+        margin-top: 10px;
+        position: fixed;
+        z-index: 4;
+        color: white;
+        font-weight: 900;
+        font-size: larger;
+      }
+      .cardList
+        {
+            overflow-x:scroll;
+            overflow-y:hidden;
+                        
+        }
+
+        .list-inline {
+        display: flex;
+        white-space:nowrap;
+        }
+
+        ::-webkit-scrollbar { 
+            display: none; 
+        }
+
+        .round {
+            width: 100%;
+            border-radius: 100px;
+            border: 1px #895798 solid;
+            background-color: #895798;
+            padding: 5px 5px 5px 25px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            color: white;
+            padding-left: 50px;
+            
+        }
+
+        .corner {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            height: 15px;
+            width: 15px;
+            z-index: 10;
+            
+        }
+
+        .search {
+            position: relative;
+            margin: 0px auto;
+            margin-left:20px;
+            margin-right:20px;
+            margin-bottom: 50px;
+        }
+
+        .search > .form-control {
+            background-color: #895798;
+            color: white;
+            border: 1px solid #895798;
+        }
+
+
+            
+    </style>
+
+</head>
+
+<body class="body-background hashtag-swipe">
+
+  
+    <div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="col">
+
+                    <div class="row mt-2">
+                        <div class="col-sm-3">
+                          <a href="./JellyFishHome.html" class="float-back-btn m-view">
+                            <i
+                              class="fa fa-chevron-left text-white fa-lg"
+                              aria-hidden="true"
+                            ></i>
+                          </a>
+                        </div>
+                        <div class="col-sm-9 text-center">
+                          <a href="./audienceTabs.html" class="float-profile-card m-view">
+                            <img src="./assests/MobileSVGAssets/userProfileTop.svg" />
+                          </a>
+                        </div>
+                      </div>
+
+                    <div class="card text-center card-profile hiden-text md-6">
+
+                        <a href="audienceTabs.html" > <img class="card-img-top img-circle rounded-circle" src="assests/WebSVGAssets/userweb4.svg" alt="Card image cap"> </a>
+                        <div class="card-body">
+                            <h5 class="card-title md-1" >@TeeJ</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Jelly Fish Score</h6>
+
+
+                           <div class="container container-circle">
+                              <div class="circle">
+                                <p class="circle-content text-color-JellyFish" style="font-size: 25px; font-weight: 900;">
+                                    363
+                                </p>
+                              </div>
+                            </div>
+
+                             <div class="row justify-content-center" >
+                                 <text class="card-link card-text-style">3048 <br> Followers</text>
+                                 <text class="card-link card-text-style">3048 <br> Following</text>
+                                 <text class="card-link card-text-style">123 <br> Stings</text>
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="card text-center md-1 hiden-text" style="border-radius: 10px;">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <a href="hashTag.html" class="btn btn-temp text-white" style="padding : 5%">
+                                        <img src="assests/WebSVGAssets/SearchTagIcon.svg"> HashTags
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="JellyFishHome.html" class="btn btn-temp text-white" style="padding : 5%">
+                                        <img src="assests/WebSVGAssets/SearchTagIcon.svg"> Audience
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="stream.html" class="btn btn-temp text-white" style="padding : 5%">
+                                        <img src="assests/WebSVGAssets/SearchTagIcon.svg"> Stream
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-8" style="margin:auto 0">
+
+                <div class="col">
+
+                    <div class="card text-center md-7 hashTitle">
+                        <div class="card-body ">
+                            <h5 class="card-title font-bold text-color-JellyFish mt-2"># HashTags</h5>
+                        </div>
+                    </div>
+
+
+                    <div class="card md-1 mt-3">
+
+                        <!-- Search Hash Trends -->
+
+                        <form id="search-form" class="mt-4">
+                            <div class="search">
+                                <input type="text" name="search" class="round form-control" size="10" placeholder="Search" />
+                                <img class="corner" src="./assests/MobileSVGAssets/Icon ionic-ios-search.svg"/>
+                            </div>
+                        </form>
+
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="float-left">
+                                        <h5 class="card-title text-color-JellyFish"><u>Suggested Tags</u></h5>
+                                    </div>
+                                    <div class="float-right">
+                                        <a href="#" class="text-color-JellyFish">
+                                            See more
+                                            </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cardList">
+                                <div class="list-inline">
+
+                                    <!--Horizontal Cards-->
+                                    <div class="col-sm-3">
+                                        <div class="card hashtag-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title hashtag-card-label"><u>#allthedifference</u></h5>
+                                                <text class="card-link hashtag-card-text-style">1,5B</text>
+                                                <div class="row">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser1.svg" >
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser2.svg">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser3.svg" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Horizontal Cards-->
+                                    <div class="col-sm-3">
+                                        <div class="card hashtag-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title hashtag-card-label"><u>#allthedifference</u></h5>
+                                                <text class="card-link hashtag-card-text-style">1,5B</text>
+                                                <div class="row">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser1.svg" >
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser2.svg">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser3.svg" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                   
+
+                                    <!--Horizontal Cards-->
+                                    <div class="col-sm-3">
+                                        <div class="card hashtag-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title hashtag-card-label"><u>#allthedifference</u></h5>
+                                                <text class="card-link hashtag-card-text-style">1,5B</text>
+                                                <div class="row">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser1.svg" >
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser2.svg">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser3.svg" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Horizontal Cards-->
+                                    <div class="col-sm-3">
+                                        <div class="card hashtag-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title hashtag-card-label"><u>#allthedifference</u></h5>
+                                                <text class="card-link hashtag-card-text-style">1,5B</text>
+                                                <div class="row">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser1.svg" >
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser2.svg">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser3.svg" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    
+                                    <!--Horizontal Cards-->
+                                    <div class="col-sm-3">
+                                        <div class="card hashtag-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title hashtag-card-label"><u>#allthedifference</u></h5>
+                                                <text class="card-link hashtag-card-text-style">1,5B</text>
+                                                <div class="row">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser1.svg" >
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser2.svg">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser3.svg" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                      
+                                    <!--Horizontal Cards-->
+                                    <div class="col-sm-3">
+                                        <div class="card hashtag-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title hashtag-card-label"><u>#allthedifference</u></h5>
+                                                <text class="card-link hashtag-card-text-style">1,5B</text>
+                                                <div class="row">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser1.svg" >
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser2.svg">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser3.svg" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                       
+                                </div>
+                            </div>
+                            <hr class="solid">
+                        </div>
+
+
+                        <!--Vertical Cards-->
+                        <div class="card-body card-list">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="float-left">
+                                        <h5 class="card-title text-color-JellyFish"><u>Trending Tags</u></h5>
+                                    </div>
+                                    <div class="float-right">
+                                        <a href="#" class="text-color-JellyFish">
+                                            See more
+                                            </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cardList">
+                                <div class="list-inline">
+
+                                    <!--Horizontal Cards-->
+                                    <div class="col-sm-3">
+                                        <div class="card hashtag-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title hashtag-card-label"><u>#DNC</u></h5>
+                                                <text class="card-link hashtag-card-text-style">2K</text>
+                                                <div class="row">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser1.svg" >
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser2.svg">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser3.svg" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Horizontal Cards-->
+                                    <div class="col-sm-3">
+                                        <div class="card hashtag-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title hashtag-card-label"><u>#Olympics</u></h5>
+                                                <text class="card-link hashtag-card-text-style">2K</text>
+                                                <div class="row">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser1.svg" >
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser2.svg">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser3.svg" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                   
+
+                                    <!--Horizontal Cards-->
+                                    <div class="col-sm-3">
+                                        <div class="card hashtag-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title hashtag-card-label"><u>#DNC</u></h5>
+                                                <text class="card-link hashtag-card-text-style">2K</text>
+                                                <div class="row">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser1.svg" >
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser2.svg">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser3.svg" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Horizontal Cards-->
+                                    <div class="col-sm-3">
+                                        <div class="card hashtag-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title hashtag-card-label"><u>#Olympics</u></h5>
+                                                <text class="card-link hashtag-card-text-style">2K</text>
+                                                <div class="row">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser1.svg" >
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser2.svg">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser3.svg" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    
+                                    <!--Horizontal Cards-->
+                                    <div class="col-sm-3">
+                                        <div class="card hashtag-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title hashtag-card-label"><u>#DNC</u></h5>
+                                                <text class="card-link hashtag-card-text-style">2K</text>
+                                                <div class="row">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser1.svg" >
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser2.svg">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser3.svg" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                      
+                                    <!--Horizontal Cards-->
+                                    <div class="col-sm-3">
+                                        <div class="card hashtag-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title hashtag-card-label"><u>#DNC</u></h5>
+                                                <text class="card-link hashtag-card-text-style">2K</text>
+                                                <div class="row">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser1.svg" >
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser2.svg">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser3.svg" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                       
+                                </div>
+                            </div>
+                            <hr class="solid">
+                        </div>
+
+                        <!--Vertical Cards-->
+                        <div class="card-body card-list">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="float-left">
+                                        <h5 class="card-title text-color-JellyFish"><u>My Tags</u></h5>
+                                    </div>
+                                    <div class="float-right">
+                                        <a href="#" class="text-color-JellyFish">
+                                            See more
+                                            </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cardList">
+                                <div class="list-inline">
+
+                                    <!--Horizontal Cards-->
+                                    <div class="col-sm-3">
+                                        <div class="card hashtag-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title hashtag-card-label"><u>#UC</u></h5>
+                                                <text class="card-link hashtag-card-text-style">6K</text>
+                                                <div class="row">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser1.svg" >
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser2.svg">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser3.svg" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Horizontal Cards-->
+                                    <div class="col-sm-3">
+                                        <div class="card hashtag-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title hashtag-card-label"><u>#UC</u></h5>
+                                                <text class="card-link hashtag-card-text-style">6K</text>
+                                                <div class="row">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser1.svg" >
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser2.svg">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser3.svg" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                   
+
+                                    <!--Horizontal Cards-->
+                                    <div class="col-sm-3">
+                                        <div class="card hashtag-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title hashtag-card-label"><u>#UC</u></h5>
+                                                <text class="card-link hashtag-card-text-style">6K</text>
+                                                <div class="row">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser1.svg" >
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser2.svg">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser3.svg" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Horizontal Cards-->
+                                    <div class="col-sm-3">
+                                        <div class="card hashtag-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title hashtag-card-label"><u>#UC</u></h5>
+                                                <text class="card-link hashtag-card-text-style">6K</text>
+                                                <div class="row">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser1.svg" >
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser2.svg">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser3.svg" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    
+                                    <!--Horizontal Cards-->
+                                    <div class="col-sm-3">
+                                        <div class="card hashtag-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title hashtag-card-label"><u>#UC</u></h5>
+                                                <text class="card-link hashtag-card-text-style">6K</text>
+                                                <div class="row">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser1.svg" >
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser2.svg">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser3.svg" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                      
+                                    <!--Horizontal Cards-->
+                                    <div class="col-sm-3">
+                                        <div class="card hashtag-card">
+                                            <div class="card-body">
+                                                <h5 class="card-title hashtag-card-label"><u>#UC</u></h5>
+                                                <text class="card-link hashtag-card-text-style">1,5B</text>
+                                                <div class="row">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser1.svg" >
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser2.svg">
+                                                    <img class="img-fluid hashtag-card-image" src="./assests/WebSVGAssets/hashuser3.svg" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                       
+                                </div>
+                            </div>
+                            <hr class="solid">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="javascript/jquery-3.3.1.min.js"></script>
+    <script src="javascript/popper.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/multislider.js"></script>
+
+    
+    <script>
+        var container = document.querySelector(".hashtag-swipe");
+  
+        container.addEventListener("touchstart", startTouch, false);
+        container.addEventListener("touchmove", moveTouch, false);
+  
+        // Swipe Up / Down / Left / Right
+        var initialX = null;
+        var initialY = null;
+  
+        function startTouch(e) {
+          initialX = e.touches[0].clientX;
+          initialY = e.touches[0].clientY;
+        }
+  
+        function moveTouch(e) {
+          if (initialX === null) {
+            return;
+          }
+  
+          if (initialY === null) {
+            return;
+          }
+  
+          var currentX = e.touches[0].clientX;
+          var currentY = e.touches[0].clientY;
+  
+          var diffX = initialX - currentX;
+          var diffY = initialY - currentY;
+  
+          if (Math.abs(diffX) > Math.abs(diffY)) {
+            // sliding horizontally
+            if (diffX > 0) {
+              // swiped left
+              console.log("swiped left");
+            //   window.location = "./JellyFishHome.html";
+            } else {
+              // swiped right
+              console.log("swiped right");
+
+            }
+          } else {
+            // sliding vertically
+            if (diffY > 0) {
+              // swiped up
+              console.log("swiped up");
+            } else {
+              // swiped down
+              console.log("swiped down");
+            }
+          }
+  
+          initialX = null;
+          initialY = null;
+  
+          e.preventDefault();
+        }
+      </script>
+
+</body>
+
+</html>

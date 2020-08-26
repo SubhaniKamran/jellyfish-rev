@@ -1,0 +1,55 @@
+.leftside, .rightside {
+    height:50vh;
+    width:100%;
+}
+
+@media screen and (min-width:785px){
+    .leftside, .rightside{
+        height:100vh
+    }
+
+}
+.leftside {
+    background:white;
+}
+
+.rightside {
+ background:white;
+}
+
+.card-body{
+  padding: 0.9rem;
+}
+
+
+.card-text-style {
+    background-color:#f5f7fe;
+    color:#615789;
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
+    font-size: 12px;
+}
+
+.card-img-top {
+  position: absolute;
+  top: -55px;
+  left: 45%;
+  margin-left: -30px;
+  width: 100px !important;
+  height: 100px;
+}
+
+.card-img-bottom-right {
+  position: absolute;
+  top: 80%;
+  left: 117%;
+  margin-left: -30%;
+  height: 100px;
+}
+
+.profile-card {
+  margin-top: 60px;
+  padding-top: 30px;
+}
+
+

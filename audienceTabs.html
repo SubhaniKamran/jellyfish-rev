@@ -1,0 +1,495 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Jelly Fish</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mixed-slider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <style>
+            .float-back-btn {
+                margin-top: 10px;
+                margin-left: 10px;
+                position: fixed;
+                z-index: 4;
+                color: white;
+                font-weight: 900;
+                font-size: larger;
+             }
+
+
+    </style>
+</head>
+
+<body class="body-background profile-swipe">
+    <div>
+        <div class="row">
+            <div class="col-sm-12">
+              <a href="./JellyFishHome.html" class="float-back-btn m-view">
+                <i
+                  class="fa fa-chevron-left text-white fa-lg"
+                  aria-hidden="true"
+                ></i>
+              </a>
+                <i
+                  class="fa fa-edit float-edit-btn text-white fa-lg m-edit-view"
+                  aria-hidden="true"
+                ></i>
+            </div>
+        </div>
+
+        <div class="row m-view-top-profile">
+            <div class="col-lg-4">
+                <div class="col">
+
+                    <div class="card text-center card-profile md-6 mob">
+                        <a href="audienceTabs.html" > <img class="card-img-top img-circle rounded-circle" src="assests/WebSVGAssets/userweb4.svg" alt="Card image cap"> </a>
+
+                        <div class="card-body">
+                                <h5 class="card-title md-1" >@TeeJ</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Jelly Fish Score</h6>
+
+                            <div class="float-left mt-5">
+                                <a href="hashTag.html" class="btn-floating btn-sm btn-tw" type="button" role="button">
+                                    <img src="assests/MobileSVGAssets/hashTagsmall.svg" class="img-fluid icon-show">
+                                </a>
+                            </div>
+                            <div class="float-right mt-5">
+                                <a href="share-mobile-only.html" class="btn-floating btn-sm btn-tw" type="button" role="button">
+                                    <img src="assests/MobileSVGAssets/Iconfeather-share-2.svg" class="img-fluid icon-show">
+                                </a>
+                            </div>
+                            
+                            <div class="container container-circle">
+                                <div class="circle">
+                                    <p class="circle-content text-color-JellyFish" style="font-size: 25px; font-weight: 900;">
+                                        363
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center">
+                                <text class="card-link card-text-style">3048 <br> Followers</text>
+                                <text class="card-link card-text-style">3048 <br> Following</text>
+                                <text class="card-link card-text-style">123  <br> Stings</text>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-center md-1 hiden-text ">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <a href="hashTag.html" class="btn btn-temp text-white" style="padding : 5%">
+                                        <img src="assests/WebSVGAssets/SearchTagIcon.svg"> HashTags
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="JellyFishHome.html" class="btn btn-temp text-white" style="padding : 5%">
+                                        <img src="assests/WebSVGAssets/SearchTagIcon.svg"> Audience
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="stream.html" class="btn btn-temp text-white" style="padding : 5%">
+                                        <img src="assests/WebSVGAssets/SearchTagIcon.svg"> Stream
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+
+                <div class="col">
+
+                    <div class="card md-6 profile-audience-tab">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item text-center" style="margin-left: 0px;">
+                                    <a class="nav-link active" id="active-tab" data-toggle="tab" href="#active" role="tab" aria-controls="home" aria-selected="true">ACTIVE</a>
+                                </li>
+                                <li class="nav-item text-center" style="margin-left: 0px; margin-right: 0px;">
+                                    <a class="nav-link" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="profile" aria-selected="false">ALL</a>
+                                </li>
+                                <li class="nav-item text-center" style="margin-right: 0px;">
+                                    <a class="nav-link" id="stings-tab" data-toggle="tab" href="#stings" role="tab" aria-controls="profile" aria-selected="false">STINGS</a>
+                                </li>
+                            </ul>
+                     
+                    </div>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="active" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="card text-center md-1">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-color-JellyFish">Ecommerce VS Retail</h5>
+                                    <h6 class="card-subtitle mb-2 text-color-JellyFish">17 hours left</h6>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="float-left">
+                                                <img class="img-circle rounded-circle img-fluid list-card-image" style="margin-right:-12px;" src="assests/WebSVGAssets/userweb4.svg" alt="Card image cap">
+                                                <img class="img-fluid " style="margin-top:55px;" src="assests/WebSVGAssets/Icon-arrow-alt-circle-up.svg" alt="Card image cap">
+
+                                                <table style="display: inline;">
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">@TeeJ</text>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">Score 50</text>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="float-right">
+                                                <table style="display: inline;">
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">@TeeJ</text>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">Score 50</text>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <img class="img-fluid " style="margin-top:55px;" src="assests/WebSVGAssets/Icon-arrow-alt-circle-down.svg" alt="Card image cap">
+                                                <img class="img-circle rounded-circle img-fluid list-card-image" style="margin-left:-12px;" src="assests/WebSVGAssets/userweb3.svg" alt="Card image cap">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="align-bottom font-bold text-color-JellyFish">
+                                        <p>#WilSonMKTG321</p>
+                                    </div>
+                                    <hr class="solid">
+                                </div>
+
+                                <div class="card-body ">
+                                    <h5 class="card-title text-color-JellyFish">Ecommerce VS Retail</h5>
+                                    <h6 class="card-subtitle mb-2 text-color-JellyFish">17 hours left</h6>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="float-left">
+                                                <img class="img-circle rounded-circle img-fluid list-card-image" style="margin-right:-12px;" src="assests/WebSVGAssets/userweb4.svg" alt="Card image cap">
+                                                <img class="img-fluid " style="margin-top:55px;" src="assests/WebSVGAssets/Icon-arrow-alt-circle-down.svg" alt="Card image cap">
+                                                <table style="display: inline;">
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">@TeeJ</text>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">Score 50</text>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="float-right">
+                                                <table style="display: inline;">
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">@TeeJ</text>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">Score 50</text>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <img class="img-fluid " style="margin-top:55px;" src="assests/WebSVGAssets/Icon-arrow-alt-circle-down.svg" alt="Card image cap">
+                                                <img class="img-circle rounded-circle img-fluid list-card-image circular-image-border" style="margin-left:-12px;" src="assests/WebSVGAssets/userweb2.svg" alt="Card image cap">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="align-bottom font-bold text-color-JellyFish">
+                                        <p>#WilSonMKTG321</p>
+                                    </div>
+                                    <hr class="solid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="all" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="card text-center md-1" style="width: 100%; border-radius: 10px;">
+                                <div class="card-body ">
+                                    <h5 class="card-title text-color-JellyFish">Ecommerce VS Retail</h5>
+                                    <h6 class="card-subtitle mb-2 text-color-JellyFish">17 hours left</h6>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="float-left">
+                                                <img class="img-circle rounded-circle img-fluid list-card-image" style="margin-right:-12px;" src="assests/WebSVGAssets/userweb3.svg" alt="Card image cap">
+                                                <img class="img-fluid " style="margin-top:55px;" src="assests/WebSVGAssets/Icon-arrow-alt-circle-up.svg" alt="Card image cap">
+
+                                                <table style="display: inline;">
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">@TeeJ</text>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">Score 50</text>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="float-right">
+                                                <table style="display: inline;">
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">@TeeJ</text>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">Score 50</text>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <img class="img-fluid " style="margin-top:55px;" src="assests/WebSVGAssets/Icon-arrow-alt-circle-down.svg" alt="Card image cap">
+                                                <img class="img-circle rounded-circle img-fluid list-card-image" style="margin-left:-12px;" src="assests/WebSVGAssets/userweb2.svg" alt="Card image cap">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="align-bottom font-bold text-color-JellyFish">
+                                        <p>#WilSonMKTG321</p>
+                                    </div>
+                                    <hr class="solid">
+                                </div>
+                                <div class="card-body ">
+                                    <h5 class="card-title text-color-JellyFish">Ecommerce VS Retail</h5>
+                                    <h6 class="card-subtitle mb-2 text-color-JellyFish">17 hours left</h6>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="float-left">
+                                                <img class="img-circle rounded-circle img-fluid list-card-image" style="margin-right:-12px;" src="assests/WebSVGAssets/userweb3.svg" alt="Card image cap">
+                                                <img class="img-fluid " style="margin-top:55px;" src="assests/WebSVGAssets/Icon-arrow-alt-circle-up.svg" alt="Card image cap">
+                                                <table style="display: inline;">
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">@TeeJ</text>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">Score 50</text>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="float-right">
+                                                <table style="display: inline;">
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">@TeeJ</text>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">Score 50</text>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <img class="img-fluid " style="margin-top:55px;" src="assests/WebSVGAssets/Icon-arrow-alt-circle-down.svg" alt="Card image cap">
+                                                <img class="img-circle rounded-circle img-fluid list-card-image circular-image-border" style="margin-left:-12px;" src="assests/WebSVGAssets/userweb4.svg" alt="Card image cap">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="align-bottom font-bold text-color-JellyFish">
+                                        <p>#WilSonMKTG321</p>
+                                    </div>
+                                    <hr class="solid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="stings" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="card text-center md-1" style="width: 100%; border-radius: 10px;">
+
+                                <div class="card-body ">
+                                    <h5 class="card-title text-color-JellyFish">Ecommerce VS Retail</h5>
+                                    <h6 class="card-subtitle mb-2 text-color-JellyFish">17 hours left</h6>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="float-left">
+                                                <img class="img-circle rounded-circle img-fluid list-card-image" style="margin-right:-12px;" src="assests/WebSVGAssets/userweb1.svg" alt="Card image cap">
+                                                <img class="img-fluid " style="margin-top:55px;" src="assests/WebSVGAssets/Icon-arrow-alt-circle-up.svg" alt="Card image cap">
+
+                                                <table style="display: inline;">
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">@TeeJ</text>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">Score 50</text>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="float-right">
+                                                <table style="display: inline;">
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">@TeeJ</text>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">Score 50</text>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <img class="img-fluid " style="margin-top:55px;" src="assests/WebSVGAssets/Icon-arrow-alt-circle-down.svg" alt="Card image cap">
+                                                <img class="img-circle rounded-circle img-fluid list-card-image" style="margin-left:-12px;" src="assests/WebSVGAssets/userweb4.svg" alt="Card image cap">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="align-bottom font-bold text-color-JellyFish">
+                                        <p>#WilSonMKTG321</p>
+                                    </div>
+                                    <hr class="solid">
+                                </div>
+
+                                <div class="card-body ">
+                                    <h5 class="card-title text-color-JellyFish">Ecommerce VS Retail</h5>
+                                    <h6 class="card-subtitle mb-2 text-color-JellyFish">17 hours left</h6>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="float-left">
+                                                <img class="img-circle rounded-circle img-fluid list-card-image" style="margin-right:-12px;" src="assests/WebSVGAssets/userweb2.svg" alt="Card image cap">
+                                                <img class="img-fluid " style="margin-top:55px;" src="assests/WebSVGAssets/Icon-arrow-alt-circle-up.svg" alt="Card image cap">
+                                                <table style="display: inline;">
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">@TeeJ</text>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">Score 50</text>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="float-right">
+                                                <table style="display: inline;">
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">@TeeJ</text>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <text class="text-color-JellyFish">Score 50</text>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <img class="img-fluid " style="margin-top:55px;" src="assests/WebSVGAssets/Icon-arrow-alt-circle-down.svg" alt="Card image cap">
+                                                <img class="img-circle rounded-circle img-fluid list-card-image" style="margin-left:-12px;" src="assests/WebSVGAssets/userweb4.svg" alt="Card image cap">
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="align-bottom font-bold text-color-JellyFish">
+                                <p>#WilSonMKTG321</p>
+                            </div>
+                            <hr class="solid">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    </div>
+    </div>
+
+    </div>
+
+    <script src="javascript/jquery-3.3.1.min.js"></script>
+    <script src="javascript/popper.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/multislider.js"></script>
+
+    <script>
+        var container = document.querySelector(".profile-swipe");
+  
+        container.addEventListener("touchstart", startTouch, false);
+        container.addEventListener("touchmove", moveTouch, false);
+  
+        // Swipe Up / Down / Left / Right
+        var initialX = null;
+        var initialY = null;
+  
+        function startTouch(e) {
+          initialX = e.touches[0].clientX;
+          initialY = e.touches[0].clientY;
+        }
+  
+        function moveTouch(e) {
+          if (initialX === null) {
+            return;
+          }
+  
+          if (initialY === null) {
+            return;
+          }
+  
+          var currentX = e.touches[0].clientX;
+          var currentY = e.touches[0].clientY;
+  
+          var diffX = initialX - currentX;
+          var diffY = initialY - currentY;
+  
+          if (Math.abs(diffX) > Math.abs(diffY)) {
+            // sliding horizontally
+            if (diffX > 0) {
+              // swiped left
+              console.log("swiped left");
+            } else {
+              // swiped right
+              console.log("swiped right");
+              window.location = "./JellyFishHome.html";
+            }
+          } else {
+            // sliding vertically
+            if (diffY > 0) {
+              // swiped up
+              console.log("swiped up");
+            } else {
+              // swiped down
+              console.log("swiped down");
+            }
+          }
+  
+          initialX = null;
+          initialY = null;
+  
+          e.preventDefault();
+        }
+      </script>
+</body>
+
+</html>
